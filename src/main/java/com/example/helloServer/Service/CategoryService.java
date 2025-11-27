@@ -2,6 +2,7 @@ package com.example.helloServer.Service;
 
 import com.example.helloServer.Model.Category;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.http.ResponseEntity;
 
@@ -10,7 +11,6 @@ public interface CategoryService {
 
     Category save(Category category);
 
-    Category findById(Long id);
-
+Category findById(Long id);
     ResponseEntity<String> deleteById(Long id);
 }
